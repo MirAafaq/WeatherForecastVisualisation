@@ -1,2 +1,24 @@
 # WeatherForecastVisualisation
 Get Latest Weather Updates of Any City with Visual Analystics
+# Tip 
+## To Get Live Time use and inlcude Following script
+```R
+library(httr)
+library(jsonlite)
+
+# Define the URL for the WorldTimeAPI
+worldtime_api_url <- "http://worldtimeapi.org/api/ip"
+
+# Make an HTTP GET request to the WorldTimeAPI
+response <- GET(worldtime_api_url)
+
+# Parse the JSON response
+worldtime_data <- fromJSON(content(response, "text"))
+
+# Extract the current date and time
+current_datetime <- worldtime_data$datetime
+
+# Print the current date and time
+cat("Current Date and Time:", current_datetime, "\n")
+```
+![weather_forecast](https://codejourney.in/App/Uploads/External/Images/weather_forecast.png)
