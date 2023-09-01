@@ -1,14 +1,13 @@
 # WeatherForecastVisualisation
 Get Latest Weather Updates of Any City with Visual Analystics
 
-# Visual Representation Of Weather Forecast From MainEngine.R
+# Visual Representation Of Weather Forecast 
 ![weather_forecast](https://codejourney.in/App/Uploads/External/Images/weather_forecast.png)
 
 # Tip 
-## To Get Live Time use and inlcude Following script
+## To Get Live Time use  Following script
 ```R
-library(httr)
-library(jsonlite)
+
 
 # Define the URL for the WorldTimeAPI
 worldtime_api_url <- "http://worldtimeapi.org/api/ip"
